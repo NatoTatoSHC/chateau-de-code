@@ -1,7 +1,7 @@
 const config = {
     type: Phaser.AUTO, // Rendering context (default: Phaser.AUTO)
     width: 800, // Width of the game canvas (default: 800)
-    height: 550, // Height of the game canvas (default: 600)
+    height: 560, // Height of the game canvas (default: 600)
     backgroundColor: '#ffffff', // Background color (default: '#000000')
 
     parent: 'gameFrame', // HTML element where the game will be placed (default: '')
