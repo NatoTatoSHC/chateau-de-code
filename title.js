@@ -49,6 +49,16 @@ class Title extends Phaser.Scene {
         });
 
         var exitButton = this.add.image(this.scale.width / 2, (this.scale.height / 2) + 200, 'exit').setScale(.4);
+        exitButton.setInteractive({pixelPerfect: true});
+        exitButton.on('pointerdown', () => {
+            location.assign("https://natotatoshc.github.io");
+        });
+        exitButton.on("pointerover", () => {
+            exitButton.setTint(Phaser.Display.Color.GetColor(200, 200, 200));
+        });
+        exitButton.on("pointerout", () => {
+            exitButton.setTint(Phaser.Display.Color.GetColor(255, 255, 255));
+        });
     }
 
     // Update game logic each frame here
